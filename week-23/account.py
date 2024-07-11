@@ -20,7 +20,7 @@ def processing_sleep():
 def banking_operations(account):
     while True:
         operation_message = "Please pick an operation you want to perform on your account.\n1- Account Details.\n2- Deposit.\n3- Withdraw.\n4- Exit.\nPlease input the action number: "
-        operation_action, opereation_value = validate_input(input(operation_message))
+        operation_action, operation_value = validate_input(input(operation_message))
 
         while not operation_action or operation_action not in [1, 2, 3, 4]:
             operation_action, opereation_value = validate_input(
