@@ -24,7 +24,7 @@ def banking_operations(account):
 
         while not operation_action or operation_value not in [1, 2, 3, 4]:
             operation_action, opereation_value = validate_input(
-                input(f"Invalid input.\m{operation_message}")
+                input(f"Invalid input.\n{operation_message}")
             )
 
         processing_sleep()
